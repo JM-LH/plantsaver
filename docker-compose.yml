@@ -29,7 +29,7 @@ services:
   #  image: weather-service
   #  container_name: weather-service
   #  build:
-  #      context: /.weather-service
+  #      context: ./weather-service
   #  ports:
   #    - 5002:5002
   #  restart: on-failure
@@ -41,7 +41,7 @@ services:
     container_name: plantsaver-dashboard
     depends_on:
       - moisture-service
-      - weather-service
+      # - weather-service
     ports:
       - 8086:80
     restart: on-failure
