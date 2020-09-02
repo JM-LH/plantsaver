@@ -5,15 +5,14 @@ services:
   # reverse proxy
   reverse-proxy:
     image: nginx:1.17.10
-      container_name: reverse_proxy_plantsaver
-
-      depends_on:
-        - moisture-service
-        - plantsaver-dashboard
-      volumes:
-        - ./reverse_proxy/nginx.conf:/etc/nginx/nginx.conf
-      ports:
-        - 80:80
+    container_name: reverse_proxy_plantsaver
+    depends_on:
+      - moisture-service
+      - plantsaver-dashboard
+    volumes:
+      - ./reverse_proxy/nginx.conf:/etc/nginx/nginx.conf
+    ports:
+      - 80:80
 
   # generate faux moisture service
   moisture-service:
