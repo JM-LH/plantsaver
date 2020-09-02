@@ -10,4 +10,4 @@ COPY . .
 
 EXPOSE 5001
 
-CMD ["python", "moisture.py"]
+CMD ["python", "moisture_server.py"]
