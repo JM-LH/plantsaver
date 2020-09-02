@@ -19,7 +19,7 @@ services:
     image: moisture-service
     container_name: moisture-service
     build:
-        context: /.moisture-service
+        context: ./moisture-service
     ports:
       - 5001:5001
     restart: on-failure
