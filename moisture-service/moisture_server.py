@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def get_moisture():
-    moisture_c = random.randint(0, 33)
+    moisture_per_centage = random.randint(0, 100)
     return { 'moisture_per_centage': moisture_per_centage }
 
 if __name__ == '__main__':
