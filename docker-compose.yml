@@ -36,12 +36,12 @@ services:
 
 
   # dashboard
-  plantsaver-dashboard:
-    image: plantsaver-dashboard
-    container_name: plantsaver-dashboard
-    depends_on:
-      - moisture-service
+#  plantsaver-dashboard:
+#    image: plantsaver-dashboard
+#    container_name: plantsaver-dashboard
+#  depends_on:
+#      - moisture-service
       # - weather-service
-    ports:
-      - 8086:80
-    restart: on-failure
+#    ports:
+#      - 8086:80
+#    restart: on-failure
